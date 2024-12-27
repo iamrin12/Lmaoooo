@@ -1,0 +1,17 @@
+GameName = "unnamed" 
+
+tab1name = "Main" 
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))() 
+
+local GameName = Library:NewWindow(GameName) 
+
+local Tab1 = GameName:NewSection(tab1name) 
+
+Tab1:CreateButton("UGC", function(value)
+while true do
+game:GetService("ReplicatedStorage"):WaitForChild("Quest"):WaitForChild("DialogEnded"):FireServer()
+wait()
+end
+end)
+local Tab2 = GameName:NewSection("Raizen")
